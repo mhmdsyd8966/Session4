@@ -1,0 +1,126 @@
+Database VS Filebase
+
+Database
+Database Management System(DBMS)
+Database System
+
+Database Sequences:
+-------------------
+1. Analysis and Requirement gathering
+2. Database Design
+3. Implementation
+4. Application Development
+
+
+Database Users:
+---------------
+1. System Analysts
+2. Database Designer
+3. Database Admin (DBA)
+4. Application Programmer
+
+
+Entity Relationship Modeling:
+-----------------------------
+1. Entity
+    - what entities needs to be described?
+    - entity attributes
+    - entity unique identifier
+    - entity relationships
+
+2. Entity types
+    - strong
+    - weak
+
+3. Entities attributes
+    - single/simple 
+    - multi-valued
+    - composite
+    - derived
+
+4. Relationship Degrees
+    - binary
+    - unary/recursive
+    - ternary
+
+5. Cardinality Ratios
+    - one to many
+    - one to one
+    - many to many
+
+6. participation
+    - must
+    - may
+
+
+ERD Example:
+------------
+Doctor
+    - id
+    - name
+    - salary
+    - age
+
+Specialization
+    - id
+    - description
+
+Patient
+    - id
+    - name
+    - insurance number
+
+Diagnose
+    - code
+    - details
+
+hello, my name is fady i have a business and i want to make an online commerce for it my business represented in some 
+of products which i sell to customers every customer can make any number of orders in my website the order contains 
+alot of products and the products is related to alot of orders, please kindly implement a system for me to manage 
+my operations :)
+
+
+ERD Example:
+------------
+
+1. product
+    - id
+    - name
+    - description
+    - price
+    - image
+
+2. customer
+    - id 
+    - name
+    - phone
+    - email
+    - password
+    - address
+
+3. order
+    - id
+    - invoice_creation_date
+    - delivery_due_date
+    - customer_message
+    - total_price
+
+
+ERD To Tables:
+--------------
+1. primary key
+    - unique
+    - not null
+
+2. foreign key
+    - is a reference for another PK in a different table
+
+
+mapping of regular entity types
+    - create table
+    - table primary key
+
+    - convert single/simple attribute, composite
+    - choose primary key
+    - create new table for multi-valued 
+    - don't store derived attribute, but compute it from the app logic
